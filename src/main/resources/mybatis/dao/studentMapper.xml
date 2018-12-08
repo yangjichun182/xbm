@@ -5,7 +5,7 @@
 	上级目录的上级目录下的 dtd/mybatis-3-mapper.dtd -->
 <!-- 上面的通过相对路径的方式不行，不能够找到对应的文件，通过classpath的方式是可以找到的 -->
 <!-- "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd" -->
-<mapper namespace="com.pactera.dao.StudentDao">
+<mapper namespace="com.xbm.dao.StudentDao">
 
 	<insert id="save" parameterType="Student">
 		insert into

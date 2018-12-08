@@ -11,8 +11,8 @@
 	<!-- 启动 spring 的注解功能 -->
 	<context:annotation-config />
 
-	<!-- 自动扫描com.pactera包 -->
-	<context:component-scan base-package="com.pactera*"
+	<!-- 自动扫描com.xbm包 -->
+	<context:component-scan base-package="com.xbm*"
 		use-default-filters="false">
 		<context:include-filter type="annotation"
 			expression="org.springframework.stereotype.Controller" />
@@ -33,7 +33,7 @@
 	<mvc:interceptors>
 		<mvc:interceptor>
 			<mvc:mapping path="/**" />
-			<bean class="com.pactera.interceptors.DebugInterceptor"></bean>
+			<bean class="com.xbm.interceptor.DebugInterceptor"></bean>
 		</mvc:interceptor>
 	</mvc:interceptors>
 </beans>

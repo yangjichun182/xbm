@@ -20,9 +20,8 @@
 	<!-- 启动 spring 的注解功能 -->
 	<context:annotation-config />
 
-	<bean id="studentController" class="com.pactera.controler.StudentController"></bean>
-	<!-- 自动扫描com.pactera包 -->
-	<context:component-scan base-package="com.pactera*">
+	<!-- 自动扫描com.xbm包 -->
+	<context:component-scan base-package="com.xbm*">
 		<context:exclude-filter type="annotation"
 			expression="org.springframework.stereotype.Controller" />
 	</context:component-scan>
@@ -54,10 +53,10 @@
 		<property name="mapperLocations" value="classpath:mybatis/dao/*.xml" />
 	</bean>
 
-	<!-- 自动扫描ccom.pactera.dao下的所有dao接口，并实现这些接口，可直接在程序中使用dao接口，不用再获取sqlsession对象 -->
+	<!-- 自动扫描ccom.xbm.dao下的所有dao接口，并实现这些接口，可直接在程序中使用dao接口，不用再获取sqlsession对象 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<!-- basePackage 属性是映射器接口文件的包路径。 你可以使用分号或逗号 作为分隔符设置多于一个的包路径 -->
-		<property name="basePackage" value="com.pactera.dao" />
+		<property name="basePackage" value="com.xbm.dao" />
 		<!-- 因为会自动装配 SqlSessionFactory和SqlSessionTemplate 所以没 有 必 要 去 指 定 SqlSessionFactory或 
 			SqlSessionTemplate 因此可省略不配置； 但是,如果你使 用了一个 以上的 DataSource，那么自动装配可能会失效。 这种 
 			情况下，你可以使用sqlSessionFactoryBeanName或sqlSessionTemplateBeanName属性来设置正确的 bean名称来使用； -->

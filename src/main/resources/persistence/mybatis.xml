@@ -7,8 +7,8 @@
 <!-- "http://mybatis.org/dtd/mybatis-3-config.dtd" ../dtd/mybatis-3-config.dtd -->
 <configuration>
 	<typeAliases>
-		<typeAlias type="com.pactera.domain.Student" alias="Student" />
-		<typeAlias type="com.pactera.domain.Employees" alias="Employees" />
+		<typeAlias type="com.xbm.domain.Student" alias="Student" />
+		<typeAlias type="com.xbm.domain.Employees" alias="Employees" />
 	</typeAliases>
 </configuration>
 

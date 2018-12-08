@@ -16,8 +16,6 @@
 		<param-value>10000</param-value>
 	</context-param>
 
-
-
 	<!-- 配置spring的上下文参数 -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
@@ -26,8 +24,6 @@
 			classpath:persistence/mybatis.xml
 		</param-value>
 	</context-param>
-
-
 
 	<!--springMvc内置的编码拦截器 -->
 	<filter>
@@ -52,14 +48,10 @@
 	<listener>
 		<listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
 	</listener>
-
-
 	<!-- 在启动Web容器时，自动装配Spring applicationContext.xml等配置信息 -->
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
-
-
 	<listener>
 		<listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
 	</listener>
@@ -69,11 +61,6 @@
 	<listener>
 		<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
 	</listener>
-
-
-
-
-
 	<!-- springMVC配置 -->
 	<servlet>
 		<servlet-name>action</servlet-name>
@@ -87,72 +74,10 @@
 
 		<load-on-startup>1</load-on-startup>
 	</servlet>
-	<servlet>
-		<servlet-name>Demo1</servlet-name>
-		<servlet-class>com.pactera.servlet.Demo1</servlet-class>
-	</servlet>
-	<servlet>
-		<servlet-name>CookieDemo1</servlet-name>
-		<servlet-class>com.pactera.servlet.CookieDemo1</servlet-class>
-	</servlet>
-	<servlet>
-		<servlet-name>ServletDemo</servlet-name>
-		<servlet-class>com.pactera.servlet.ServletDemo</servlet-class>
-	</servlet>
-	<servlet>
-		<servlet-name>TestAjaxServlet</servlet-name>
-		<servlet-class>com.pactera.servlet.TestAjaxServlet</servlet-class>
-	</servlet>
-	<servlet>
-		<servlet-name>RegisterServlet</servlet-name>
-		<servlet-class>com.pactera.servlet.RegisterServlet</servlet-class>
-	</servlet>
-	<servlet>
-		<servlet-name>XmlFileServlet</servlet-name>
-		<servlet-class>com.pactera.servlet.XmlFileServlet</servlet-class>
-	</servlet>
-	<servlet>
-		<servlet-name>JsonServlet</servlet-name>
-		<servlet-class>com.pactera.servlet.JsonServlet</servlet-class>
-	</servlet>
-
-
-
-
-
-
 
 	<servlet-mapping>
 		<servlet-name>action</servlet-name>
 		<url-pattern>*.do</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>Demo1</servlet-name>
-		<url-pattern>/servlet/Demo1</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>CookieDemo1</servlet-name>
-		<url-pattern>/servlet/CookieDemo1</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>ServletDemo</servlet-name>
-		<url-pattern>/servlet/ServletDemo</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>TestAjaxServlet</servlet-name>
-		<url-pattern>/TestAjaxServlet</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>RegisterServlet</servlet-name>
-		<url-pattern>/RegisterServlet</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>XmlFileServlet</servlet-name>
-		<url-pattern>/XmlFileServlet</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>JsonServlet</servlet-name>
-		<url-pattern>/JsonServlet</url-pattern>
 	</servlet-mapping>
 
 

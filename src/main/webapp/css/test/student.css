@@ -1,0 +1,7 @@
+@CHARSET "UTF-8";
+
+#student {
+	width: 40%; /*表格宽度*/
+	border-collapse: collapse; /*表格单边框*/
+	text-align: center; /*单元格文本居中显示*/
+}
