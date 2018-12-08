@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>                                                             
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+ "classpath:dtd/mybatis-3-mapper.dtd">
+<!-- ../../dtd/mybatis-3-mapper.dtd 上面的这种使用相对路径的方式是可以的，我们发现相对路径就是相对于本文件的路径，前面的写法就是在本文件目录的 
+	上级目录的上级目录下的 dtd/mybatis-3-mapper.dtd -->
+<!-- 上面的通过相对路径的方式不行，不能够找到对应的文件，通过classpath的方式是可以找到的 -->
+<!-- "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd" -->
+<mapper namespace="com.pactera.dao.StudentDao">
+
+	<insert id="save" parameterType="Student">
+		insert into
+		t_app_student(id,name,sex,age)
+		values(#{ID},#{NAME},#{SEX},#{AGE})
+	</insert>
+	<select id="getStudent" resultType="Student" parameterType="String">
+		select * from t_app_student where ID =#{id}
+	</select>
+</mapper>                                                                                                  
